@@ -82,7 +82,7 @@ class _OgreCommonImport_(object):
         section_options = {
             "General" : ["IM_SWAP_AXIS", "IM_V2_MESH_TOOL_VERSION", "IM_XML_DELETE"], 
             "Armature" : ["IM_IMPORT_ANIMATIONS", "IM_ROUND_FRAMES", "IM_USE_SELECTED_SKELETON"], 
-            "Mesh" : ["IM_IMPORT_NORMALS", "IM_MERGE_SUBMESHES"], 
+            "Mesh" : ["IM_MERGE_SUBMESHES"], 
             "Shape Keys" : ["IM_IMPORT_SHAPEKEYS"], 
             "Logging" : ["IM_Vx_ENABLE_LOGGING"]
         }
@@ -229,10 +229,10 @@ class _OgreCommonImport_(object):
         default=config.get('XML_DELETE')) = {}
 
     # Mesh
-    IM_IMPORT_NORMALS : BoolProperty(
-        name="Import Normals",
-        description="Import custom mesh normals",
-        default=config.get('IMPORT_NORMALS')) = {}
+#    IM_IMPORT_NORMALS : BoolProperty(
+#        name="Import Normals",
+#        description="Import custom mesh normals",
+#        default=config.get('IMPORT_NORMALS')) = {}
 
     IM_MERGE_SUBMESHES : BoolProperty(
         name="Merge Submeshes",

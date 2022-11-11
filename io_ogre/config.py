@@ -89,7 +89,7 @@ _CONFIG_DEFAULTS_ALL = {
     'SHOW_LOG_NAME' : False,
     
     # Import
-    'IMPORT_NORMALS' : True,
+    'IMPORT_NORMALS' : False,
     'MERGE_SUBMESHES' : True,
     'IMPORT_ANIMATIONS' : True,
     'ROUND_FRAMES' : True,

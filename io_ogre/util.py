@@ -200,13 +200,13 @@ def mesh_convert(infile):
         ret = subprocess.call(cmd)
 
         # Instead of asserting, report an error
-        if ret != 0:
-            logger.error("OgreXMLConverter returned with non-zero status, check OgreXMLConverter.log")
-            logger.info(" ".join(cmd))
-            Report.errors.append("OgreXMLConverter finished with non-zero status converting mesh: (%s), unable to proceed" % name)
-            return False
-        else:
-            return True
+      #  if ret != 0:
+      #      logger.error("OgreXMLConverter returned with non-zero status, check OgreXMLConverter.log")
+      #      logger.info(" ".join(cmd))
+      #      Report.errors.append("OgreXMLConverter finished with non-zero status converting mesh: (%s), unable to proceed" % name)
+      #      return False
+      #  else:
+        return True
         
     else:
         # Convert to v2 format if required
